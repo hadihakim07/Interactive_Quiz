@@ -15,16 +15,16 @@
             <RowDefinition Height="1*"></RowDefinition>
         </Grid.RowDefinitions>
 
-        <TextBlock Text="Quiz Text" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="50" Grid.Row="1" Margin="0,50,0,0" FontWeight="Bold" ></TextBlock>
+        <TextBlock x:Name="quizTitleTxt" Text="" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="50" Grid.Row="1" Margin="0,50,0,0" FontWeight="Bold" ></TextBlock>
         <TextBlock x:Name="QuestionTxt" Text="Question Text" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="45" Grid.Row="1" Margin="0,200,0,0"/>
 
 
-        <Button x:Name="Btn_A1" Content="Answer 1" Grid.Row="1" Margin="245,373,0,0" VerticalAlignment="Top" Height="65" Width="150" Background="PeachPuff"></Button>
-        <Button x:Name="Btn_A2" Content="Answer 2" Grid.Row="1" Margin="0,373,200,0" VerticalAlignment="Top" Height="65" Width="150" HorizontalAlignment="Center" Background="PeachPuff"></Button>
-        <Button x:Name="Btn_A3" Content="Answer 3" Grid.Row="1" Margin="200,373,0,0" VerticalAlignment="Top" Height="65" Width="150" HorizontalAlignment="Center" Background="PeachPuff"/>
-        <Button x:Name="Btn_A4" Content="Answer 4" Grid.Row="1" Margin="0,373,245,0" VerticalAlignment="Top" Height="65" Width="150" HorizontalAlignment="Right" Background="PeachPuff"></Button>
+        <Button x:Name="Btn_A1" Content="Answer 1" Grid.Row="1" Margin="245,373,0,0" VerticalAlignment="Top" Height="65" Width="150" Background="PeachPuff" Click="Btn_A1_Click"></Button>
+        <Button x:Name="Btn_A2" Content="Answer 2" Grid.Row="1" Margin="0,373,200,0" VerticalAlignment="Top" Height="65" Width="150" HorizontalAlignment="Center" Background="PeachPuff" Click="Btn_A2_Click"></Button>
+        <Button x:Name="Btn_A3" Content="Answer 3" Grid.Row="1" Margin="200,373,0,0" VerticalAlignment="Top" Height="65" Width="150" HorizontalAlignment="Center" Background="PeachPuff" Click="Btn_A3_Click"/>
+        <Button x:Name="Btn_A4" Content="Answer 4" Grid.Row="1" Margin="0,373,245,0" VerticalAlignment="Top" Height="65" Width="150" HorizontalAlignment="Right" Background="PeachPuff" Click="Btn_A4_Click"></Button>
 
-        <Button x:Name="BtnQuit" Content="Quit" Grid.Row="1" Margin="0,373,200,30" VerticalAlignment="Bottom" Height="40" Width="100" HorizontalAlignment="Center" Background="PeachPuff"></Button>
-        <Button x:Name="BtnNext" Content="Next" Grid.Row="1" Margin="200,373,0,30" VerticalAlignment="Bottom" Height="40" Width="100" HorizontalAlignment="Center" Background="PeachPuff"></Button>
+        <Button x:Name="BtnQuit" Content="Quit" Grid.Row="1" Margin="0,373,200,30" VerticalAlignment="Bottom" Height="40" Width="100" HorizontalAlignment="Center" Background="PeachPuff" Click="BtnQuit_Click"></Button>
+        <Button x:Name="BtnNext" Content="Next" Grid.Row="1" Margin="200,373,0,30" VerticalAlignment="Bottom" Height="40" Width="100" HorizontalAlignment="Center" Background="PeachPuff" Click="BtnNext_Click"></Button>
     </Grid>
 </Page>

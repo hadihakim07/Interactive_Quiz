@@ -9,19 +9,20 @@ namespace Interactive_Quiz_Abdul_Hakimzadah
     class Quiz
     {
 
-        public Quiz(string title)
+        public Quiz()
         {
-            title = Title;
-
+            Title = "Food Quiz";
             LoadQuestions();
 
         }
 
-        private readonly List<Question> _questionList = new List<Question> { };
+        private List<Question> _questionList = new List<Question> { };
         private int CurrentQuestionIndex;
-        private string Title { get; set; } = "Food Quiz";
+        public string Title { get; set; }
         private int Score { get; }
-
+        private string _answer;
+        private string _correctAnswer;
+        public bool IsCorrect { get; set; }
 
 
 
@@ -87,11 +88,12 @@ namespace Interactive_Quiz_Abdul_Hakimzadah
         }
 
 
-        private string GetQuestionWithoutAnswer()
+        private void GetQuestionWithoutAnswer()
         {
-            //var rand = new Random();
 
+            //return QuestionText CurrentQuestionIndex = rng.Next(list.Count);
             
+
         }
 
 
@@ -102,8 +104,24 @@ namespace Interactive_Quiz_Abdul_Hakimzadah
 
         public void CheckUserAnswer()
         {
+            int Total = 0;
+
+            if (_answer == _correctAnswer)
+            {
+                Total = Score + 1;
+            }
+
+            else
+            {
+                Total = Score + 0;
+            }
+
+
+            return;
 
         }
 
+
+       
     }
 }
